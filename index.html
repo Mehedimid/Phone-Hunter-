@@ -28,8 +28,11 @@
           type="text"
           placeholder="Search Phone..."
           class="input input-bordered input-accent w-full max-w-xs" />
-        <button onclick="searchBtn()" class="btn btn-accent">Accent</button>
+        <button onclick="searchBtn()" class="btn btn-accent">Search</button>
       </section>
+      <div id="loading-container" class="flex justify-center mt-16 hidden">
+        <span class="loading loading-spinner loading-lg"></span>
+        </div>
       <section class="max-w-5xl mx-auto">
         <div
           id="card-container"

@@ -42,17 +42,28 @@ const displayPhone = (phones) => {
         `
 
         cardContainer.appendChild(phoneCard)
-
+       loading(false)
   });
 };
 
 
 const searchBtn = () =>{
+    loading(true);
     const searchFld = document.getElementById("search-field");
     const searchText = searchFld.value ;
     loadPhone(searchText);
 }
 
-const showBtn = (target) => {
-
+const loading = (isLoading) =>{
+    const loadingContainer = document.getElementById('loading-container');
+    if(isLoading){
+       loadingContainer.classList.remove('hidden')
+   }
+   else{
+    loadingContainer.classList.add('hidden')
+   }
 }
+
+// const showBtn = (target) => {
+
+// }
