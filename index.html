@@ -40,11 +40,27 @@
           <!-- here phones will be added via js -->
         </div>
         <div id="show-btn-container" class="flex my-5 justify-center hidden">
-            <button  onclick="showBtn(this)" class="btn bg-slate-400">Show more</button>
+            <button  onclick="showBtn()" class="btn btn-accent">Show more</button>
         </div>
       </section>
     </main>
     <footer></footer>
+<!-- ==============    modal    ============== -->
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="details_modal.showModal()">open modal</button> -->
+<dialog id="details_modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <div id="more_details" class="py-4">
+
+
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn btn-error">Close</button>
+    </div>
+  </form>
+</dialog>
+
 
     <script src="js/index.js"></script>
   </body>
